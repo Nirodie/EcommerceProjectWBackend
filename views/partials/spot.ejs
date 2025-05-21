@@ -1,0 +1,12 @@
+<div class="spot-content">
+    <% clothes.slice(0,3).forEach(clothing=> { %>
+        <div class="spot-card">
+            <a href="/products/<%= clothing.id %>">
+                <h2>
+                    <%= clothing.name %>
+                </h2>
+                <img src="<%= clothing.imageUrl%>" alt="<%= clothing.name %>">
+            </a>
+        </div>
+        <% }) %>
+</div>

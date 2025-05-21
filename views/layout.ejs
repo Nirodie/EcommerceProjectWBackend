@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title><%= title %></title>
+        <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' />
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+<body>
+    <header class="header-container">
+        <nav>
+            <a href="/" class="header-logo">
+            <img src="https://placehold.co/400x100/png" class="header-logo-image" alt="Logo of the website"></a>
+            <div class="navbar">
+                <div class="search-container">
+                    <form class="search-wrapper">
+                        <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+                        <input placeholder="Search products" type="text" class="search-input">
+                    </form>
+                </div>
+            </div>
+            <div class="navbuttons">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-basket"></i></a>
+            </div>
+        </nav>
+        <ul class="link-list">
+            <li><a href="#">New</a></li>
+            <li><a href="#">Bestsellers</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Campaigns</a></li>
+        </ul>
+    </header>
+    <main>
+        <%- body %>
+    </main>
+    <footer class="footer-container">
+        <ul class="footer-list">
+            <li>
+                <div class="footer-icon">
+                    <div>
+                        <i class="fa fa-globe"></i>
+                    </div>
+                    <p>Free Shipping and return</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="footer-icon">
+                    <div>
+                        <i class="fa fa-plane"></i>
+                    </div>
+                    <p>Express shipping</p>
+                </div>
+            </li>
+            <li>
+                <div class="footer-icon">
+                    <div>
+                        <i class="fa fa-shield"></i>
+                    </div>
+                    <p>Secure payments</p>
+                </div>
+            </li>
+            <li>
+                <div class="footer-icon">
+                    <div>
+                        <i class="fa fa-smile-o"></i>
+                    </div>
+                    <p>New items every day</p>
+                </div>
+            </li>
+        </ul>
+        <div class="footer-final">
+            <div class="footer-final-menu">
+                <div class="shopping-menu">
+                    <h3>Shopping</h3>
+                    <ul>
+                        <li>Winter jackets</li>
+                        <li>puffer jackets</li>
+                        <li>Coats</li>
+                        <li>Trenchcoats</li>
+                    </ul>
+                </div>
+                <div class="page-menu">
+                    <h3>My page</h3>
+                    <ul>
+                        <li>My orders</li>
+                        <li>My account</li>
+                    </ul>
+                </div>
+                <div class="Customer-service-menu">
+                    <h3>Customer service</h3>
+                    <ul>
+                        <li>Returnpolicy</li>
+                        <li>GDPR</li>
+                    </ul>
+
+                </div>
+            </div>
+            <p>© Freaky Fashion</p>
+        </div>
+    </footer>
+</body>
+</html>
