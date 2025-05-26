@@ -1,45 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title><%= title %></title>
-    <link rel="stylesheet" href='/stylesheets/admin-styles.css' />
-</head>
-
-<body>
-    <header>
-        <h1>Administration</h1>
-    </header>
-    <div class="body-container">
-        <div class="product-sidebar">
-            <h2>Products</h2>
+<div class="admin-content">
+    <h2>New product</h2>
+    <form method="POST">
+        <div class="name-container">
+            <h3>Name</h3>
+            <input type="text" class="name-input" name="name" id="name">
         </div>
-
-        <div class="admin-content">
-            <h2>New product</h2>
-            <div class="name-container">
-                <h3>Name</h3>
-                <input type="text">
-            </div>
-            <div class="description-container">
-                <h3>Description</h3>
-                <textarea name="descriptionarea" rows="7" cols="50"></textarea>
-                <p>Picture</p>
-                <input type="file" class="image-input">
-            </div>
-            <div class="SKU-container">
-                <h3>SKU</h3>
-                <input type="text">
-            </div>
-            <div class="price-container">
-                <h3>Price</h3>
-                <input type="number">
-            </div>
-
-            <button class="add-button">Add item</button>
-
+        <div class="description-container">
+            <h3>Description</h3>
+            <textarea class="descriptionarea" name="description" id="description" rows="7" cols="50"></textarea>
         </div>
-    </div>
-</body>
-
-</html>
+        <div class="image-container">
+            <h3>Picture URL</h3>
+            <input type="text" class="image-input" name="imageUrl" id="imageUrl">
+        </div>
+        <div class="brand-container">
+            <h3>Brand</h3>
+            <input type="text" class="brand-input" name="brand" id="brand">
+        </div>
+        <div class="sku-container">
+            <h3>SKU</h3>
+            <input type="text" class="sku-input" name="SKU" id="SKU">
+        </div>
+        <div class="price-container">
+            <h3>Price</h3>
+            <input type="number" class="price-input" name="price" id="price">
+        </div>
+        <button type="submit" class="add-button">Add item</button>
+    </form>
+</div>

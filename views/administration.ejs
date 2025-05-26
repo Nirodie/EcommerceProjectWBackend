@@ -1,10 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title><%= title %></title>
-    <link rel="stylesheet" href='/stylesheets/admin-styles.css' />
-</head>
-<body>
-    <h1>Yo</h1>
-</body>
-</html>
+<div class="admin-products-title">
+    <h2>Products</h2>
+    <a href="/admin/products/new"><button class="add-product-button">New Product</button></a>
+</div>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>SKU</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% clothes.forEach(clothing=> { %>
+                <tr>
+                    <td>
+                        <%= clothing.name %>
+                    </td>
+                    <td>
+                        <%= clothing.SKU %>
+                    </td>
+                    <td>€<%= clothing.price %>
+                    </td>
+                </tr>
+                <% }) %>
+        </tbody>
+    </table>
+</div>
