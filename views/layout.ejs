@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>  
-        <title><%= title %></title>
-        <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' />
-        <link rel='stylesheet' href='/stylesheets/style.css' />
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
 <body>
     <header class="header-container">
         <nav>
             <a href="/" class="header-logo">
-            <img src="https://placehold.co/400x100/png" class="header-logo-image" alt="Logo of the website"></a>
+                <img src="https://placehold.co/400x100/png" class="header-logo-image" alt="Logo of the website"></a>
             <div class="navbar">
                 <div class="search-container">
-                    <form class="search-wrapper" method="GET">
+                    <form class="search-wrapper" method="GET" action="/search">
                         <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
                         <input placeholder="Search products" type="search" class="search-input" name="brand">
                     </form>
@@ -100,4 +106,5 @@
         </div>
     </footer>
 </body>
+
 </html>

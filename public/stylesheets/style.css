@@ -22,13 +22,20 @@ body {
     margin: 0;
 }
 
+
+
 .header-logo {
     display: block;
-    width: 92%;
+    width: 95%;
     height: auto;
     padding: 1rem;
     grid-area: header;
 }
+
+.header-logo-image {
+    width: 100%;
+}
+
 
 .shopping-icons {
     display: flex;
@@ -48,6 +55,7 @@ nav {
 
 .navbuttons {
     font-size: 24px;
+    justify-self: self-end;
 }
 
 .search-container {
@@ -107,16 +115,19 @@ nav {
 }
 
 .product-card {
-    position: relative;
     padding: clamp(1rem, 5vw, 2rem);
 }
 
-.product-heart{
+.product-image-container {
+    position: relative;
+}
+
+.product-image-container i {
     font-size: 30px;
     position: absolute;
-    top: 83%;
-    left: 89%;
-    transform: translate(-83%, -89%);
+    top: 95%;
+    left: 95%;
+    transform: translate(-90%, -90%);
     margin: 0;
 }
 
@@ -204,7 +215,7 @@ nav {
     padding-left: 10px;
 }
 
-@media (width >= 640px) {
+@media (width >=640px) {
     .header-logo {
         max-width: 40%;
     }
@@ -266,7 +277,7 @@ nav {
         justify-content: space-between;
     }
 
-    .search-main h2{
+    .search-main h2 {
         text-align: center;
     }
 
@@ -297,7 +308,7 @@ nav {
     }
 }
 
-@media (width >= 1024px) {
+@media (width >=1024px) {
 
     .header-logo {
         max-width: 20%;

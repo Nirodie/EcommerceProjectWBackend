@@ -8,7 +8,6 @@ router.get('/', function (req, res, next) {
 
   const select = db.prepare('SELECT * FROM clothes');
   const clothes = select.all();
-
   res.render('index', {
     title: 'Freaky Fashion',
     clothes

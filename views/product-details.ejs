@@ -19,8 +19,10 @@
         <% clothes.slice(0,3).forEach(clothing=> { %>
             <a href="/products/<%= clothing.id %>">
                 <div class="product-card">
-                    <span class="product-heart"><i class="fa fa-heart"></i></span>
-                    <img src="<%= clothing.imageUrl %>" alt="<%= clothing.name %>" class="product-image">
+                    <div class="product-image-container">
+                <i class="fa fa-heart"></i>
+                <img src="<%= clothing.imageUrl %>" alt="<%= clothing.name %>" class="product-image">
+                </div>
                     <div class="product-info">
                         <h3 class="product-name">
                             <%= clothing.name %>
