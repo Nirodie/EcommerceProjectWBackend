@@ -266,6 +266,10 @@ nav {
         justify-content: space-between;
     }
 
+    .search-main h2{
+        text-align: center;
+    }
+
     .footer-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
