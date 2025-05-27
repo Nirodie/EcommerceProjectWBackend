@@ -6,14 +6,14 @@ const db = require('better-sqlite3')('./data/freakyfashion.db', {
 
 router.get('/', function (req, res, next) {
 
-    const { brand } = req.query;
+    const { name } = req.query;
 
     let sql = 'SELECT * FROM clothes';
     let params = [];
 
-    if (brand) {
-        sql += ' WHERE LOWER(brand) = LOWER(?)';
-        params.push(brand);
+    if (name) {
+        sql += ' WHERE LOWER(name) = LOWER(?)';
+        params.push(name);
     }
     const select = db.prepare(sql);
     const clothes = select.all(...params);

@@ -80,6 +80,11 @@ input::-webkit-outer-spin-button {
     margin: 20px;
 }
 
+.add-product-button{
+    height: 40px;
+    width: 100px;
+}
+
 form div {
     margin-bottom: 20px;
 }

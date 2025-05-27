@@ -1,12 +1,10 @@
 <div class="product-content">
     <% clothes.forEach(clothing=> { %>
-        <a href="/products/<%= clothing.id %>">
+        <a href="/products/<%= clothing.id %>" class="text-decoration-none">
             <div class="product-card">
                 <div class="product-image-container">
-                <i class="fa fa-heart"></i>
-                <div class="product-image">
-                <img src="<%= clothing.imageUrl %>" alt="<%= clothing.name %>">
-                </div>
+                    <i class="fa fa-heart"></i>
+                    <img src="<%= clothing.imageUrl %>" alt="<%= clothing.name %>">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">
